@@ -1,0 +1,32 @@
+
+.temperature-container {
+    display: flex; /* Flexbox para alinear elementos de izquierda a derecha */
+    justify-content: space-around; /* Espacio entre las "tarjetas" */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 80px;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+  }
+  
+  .temperature-card {
+    display: flex;
+    flex-direction: column; /* Alinea los textos en columna dentro de cada tarjeta */
+    align-items: center; /* Centra los textos horizontalmente */
+    padding: 10px;
+    border: 1px solid #ccc; /* Bordes opcionales */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    background-color: white; /* Color de fondo de cada tarjeta */
+    width: 100px; /* Ajusta el ancho de cada tarjeta */
+  }
+  
+  .temperature-value {
+    font-size: 2em; /* Tamaño grande para el valor (temperatura/humedad) */
+    margin: 0;
+    color: black;
+  }
+  
+  .temperature-label {
+    font-size: 1em;
+    margin-top: 5px; /* Espacio entre el valor y la etiqueta */
+    color: #555;
+  }
+  

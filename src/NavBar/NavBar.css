@@ -1,0 +1,55 @@
+.header-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(69, 26, 113);
+  list-style: none;
+  height: 150px;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+.imgLogo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px; /* Espacio entre el logo y el input */
+}
+
+.inputSet {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #ddd; /* Borde suave */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  outline: none; /* Quitar borde azul al seleccionar */
+}
+
+.inputSet:focus {
+  border-color: #6c63ff; /* Cambiar color del borde cuando se enfoca */
+}
+
+.buttonSet {
+  font-size: 1.5rem;
+  padding: 10px 20px; /* Espacio dentro del botón */
+  background-color: #6c63ff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.buttonSet:hover {
+  background-color: #584ed8; /* Color más oscuro al pasar el mouse */
+}

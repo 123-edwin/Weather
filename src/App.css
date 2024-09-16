@@ -1,0 +1,44 @@
+#root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.DataText {
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido a lo largo */
+  padding:3px;
+  background-color: #f8f9fa; /* Color de fondo claro */
+}
+
+.country, .name, .localtime {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el texto */
+  font-size: 1.2rem; /* Tamaño de letra más grande */
+  color: #333; /* Color de texto */
+  padding: 10px;
+}
+
+.country p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.name p {
+  font-weight: 500;
+  color: #555; /* Color ligeramente más claro */
+}
+
+.localtime p {
+  font-style: italic;
+  color: #777; /* Color aún más claro */
+  font-size: 1rem;
+}
