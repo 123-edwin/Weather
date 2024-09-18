@@ -1,5 +1,5 @@
 import Proptypes from "prop-types";
-import "./WindThings.css"; // Para estilos
+import "./WindThings.css";
 
 export function WindThings({ wind_speed, wind_direction, is_day }) {
   return (

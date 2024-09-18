@@ -1,28 +1,17 @@
-#root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.body {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
-
 .DataText {
   display: flex;
   justify-content: space-between; /* Distribuye el contenido a lo largo */
-  padding:3px;
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  padding: 10px 20px; /* Ajusta el espacio interno para que sea más uniforme */
   background-color: #f8f9fa; /* Color de fondo claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle efecto de barra */
 }
 
 .country, .name, .localtime {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el texto */
-  font-size: 1.2rem; /* Tamaño de letra más grande */
+  align-items: center; /* Centra el texto verticalmente */
+  font-size: 1.2rem; /* Tamaño de letra */
   color: #333; /* Color de texto */
   padding: 10px;
 }
@@ -39,6 +28,7 @@
 
 .localtime p {
   font-style: italic;
-  color: #777; /* Color aún más claro */
+  color: #777; /* Color más claro */
   font-size: 1rem;
 }
+

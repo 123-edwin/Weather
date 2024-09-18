@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import "./Navbar.css"; // Importa los estilos específicos del Navbar
 import Climita from "../media/Climita.png"; // Importa la imagen del logo
+import "./NavBar.css"; // Importa el archivo de estilos
 
 export function Navbar({ input, setInput, setPlace }) {
   const handleSubmit = (e) => {

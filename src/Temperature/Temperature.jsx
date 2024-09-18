@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./Temperature.css"; // Para estilos
+import "./Temperature.css";
 
 export function temperatureInfo({
   temperature,

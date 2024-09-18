@@ -38,29 +38,30 @@ function App() {
       <Navbar input={input} setInput={setInput} setPlace={setPlace} />
       {data && (
         <>
-          <div className="DataText">
-            <div className="country">
-              <p>{data.country}</p>
+            <div className="DataText">
+              <div className="country">
+                <p>{data.country}</p>
+              </div>
+              <div className="name">
+                <p>El lugar es: {data.name}</p>
+              </div>
+              <div className="localtime">
+                <p>{data.localtime}</p>
+              </div>
             </div>
-            <div className="name">
-              <p>El lugar es: {data.name}</p>
+            <div className="containercards">
+              <Temperature
+                temperature={data.temperature}
+                humidity={data.humidity}
+                feelslike={data.feelslike}
+                condition={data.condition}
+              ></Temperature>
+              <WindThings
+                wind_speed={data.wind_speed}
+                wind_direction={data.wind_direction}
+                is_day={data.is_day}
+              ></WindThings>
             </div>
-            <div className="localtime">
-              <p>{data.localtime}</p>
-            </div>
-          </div>     
-            <Temperature
-            temperature={data.temperature}
-            humidity={data.humidity}
-            feelslike={data.feelslike}
-            condition={data.condition}
-          ></Temperature>
-          <WindThings
-            wind_speed={data.wind_speed}
-            wind_direction={data.wind_direction}
-            is_day={data.is_day}
-          ></WindThings>
- 
         </>
       )}
     </>
