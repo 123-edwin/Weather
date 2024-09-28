@@ -23,5 +23,5 @@ export function WindThings({ wind_speed, wind_direction, is_day }) {
 WindThings.propTypes = {
   wind_speed: Proptypes.number.isRequired,
   wind_direction: Proptypes.string.isRequired,
-  is_day: Proptypes.bool.isRequired,
+  is_day: Proptypes.number.isRequired,
 };

@@ -32,3 +32,26 @@
   font-size: 1rem;
 }
 
+.mainContainer{
+  display: flex;
+  flex-direction:row-reverse; /* Mantener los componentes en columna */
+  gap: 10px; /* Espacio entre los componentes */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 10px; /* Ajusta el padding si es necesario */
+}
+
+.containerCards {
+  display: grid; /* Usar grid para la disposición interna */
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas para el primer hijo */
+  gap: 10px; /* Espacio entre las tarjetas */
+  padding: 10px; /* Ajusta el padding si es necesario */
+  width: 48%; /* Ocupar un 48% del contenedor principal */
+}
+
+.containerNews {
+  display: grid; /* Usar grid para la disposición interna */
+  grid-template-columns: 1fr; /* 1 columna para el segundo hijo */
+  gap: 10px; /* Espacio entre las noticias */
+  padding: 10px; /* Ajusta el padding si es necesario */
+  width: 48%; /* Ocupar un 48% del contenedor principal */
+}
