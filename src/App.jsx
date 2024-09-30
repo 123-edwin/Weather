@@ -63,6 +63,13 @@ function App() {
           </div>
       )}
       <div className="mainContainer">
+      {errorNews ? <h2>{errorNews}</h2> : null}
+        {newsData && (
+          <div className="containerNews">
+            <NewsCard newsData={newsData} />
+          </div>
+        )}
+        
         {weatherData && (
           <div className="containerCards">
             <Temperature
@@ -76,13 +83,6 @@ function App() {
               wind_direction={weatherData.wind_direction}
               is_day={weatherData.is_day}
             ></WindThings>
-          </div>
-        )}
-
-        {errorNews ? <h2>{errorNews}</h2> : null}
-        {newsData && (
-          <div className="containerNews">
-            <NewsCard newsData={newsData} />
           </div>
         )}
       </div>
