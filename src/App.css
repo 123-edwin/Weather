@@ -36,6 +36,8 @@
   display: flex;
   flex-direction:row; /* Mantener los componentes en columna */
   align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center;
+  width: 100%;
 }
 
 .containerCards {
@@ -46,5 +48,5 @@
 
 .containerNews {
   display: grid; /* Usar grid para la disposición interna */
-  width: 50%; /* Ocupar un 48% del contenedor principal */
+  width: auto; /* Ocupar un 48% del contenedor principal */
 }
